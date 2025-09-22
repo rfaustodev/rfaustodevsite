@@ -1,5 +1,5 @@
 # Usar imagem oficial do Java 17
-FROM eclipse-temurin:25-jdk
+FROM eclipse-temurin:23-jdk
 
 # Definir diretório de trabalho
 WORKDIR /app
