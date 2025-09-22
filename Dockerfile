@@ -9,10 +9,11 @@ COPY . .
 
 # Build do projeto com Maven Wrapper
 RUN ./mvnw clean package -DskipTests
+	cp target/*.jar app.jar
 
 # Expor a porta
 EXPOSE 8080
 
 # Comando para rodar o JAR gerado
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "app.jar"]
 
